@@ -327,6 +327,10 @@ a:focus {
 .panel-body table {
   /* Flex Table */ }
   .panel-body table.flex-table {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column; }
   .panel-body table.flex-table thead, .panel-body table.flex-table tbody {
@@ -889,8 +893,8 @@ a:focus {
         transform: translate(50%, -50%); }
   .teams-people-view-body {
     max-height: calc(100vh - 30rem); }
-  .teams-people-view .panel {
-    width: 100%; }
+  .teams-people-view .panel-body .table-header-fixed {
+    display: flex; }
     .teams-people-view .panel-body .table-header-fixed thead {
       border-bottom: 1px solid #E6E8EB;
       padding-bottom: .2rem; }
@@ -907,6 +911,7 @@ a:focus {
             font-size: 1.3rem;
             margin-left: .6rem; }
     .teams-people-view .panel-body .table-header-fixed tbody {
+      width: 100%;
       max-height: calc(100vh - 11rem - 16rem - 8rem);
       border-bottom: 1px solid #E6E8EB; }
     .teams-people-view .panel-body .table-header-fixed tbody tr {
