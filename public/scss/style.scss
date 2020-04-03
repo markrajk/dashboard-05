@@ -1505,8 +1505,6 @@ a:focus {
 // ==================================
 .teams-people-view {
   padding:2.5rem 0;
-  //margin:0 3.6rem;
-  //margin-left: 4.2rem;
   border-top: 1px solid #e1e1e1;
   max-width: 88.2rem;
 
@@ -1583,10 +1581,6 @@ a:focus {
           border-bottom: 1px solid #E6E8EB;
         }
 
-        // & tr {
-        //   //padding: 0 1.7rem;
-        // }
-
         & tbody {
           & tr {
             padding: .6rem 0;
@@ -1601,7 +1595,7 @@ a:focus {
         & td,
         & th {
 
-          &:nth-of-type(1) {
+          &.table-header-fixed-col-1 {
             flex: .7!important;
 
             @include respond(desktop-xsm) {
@@ -1609,26 +1603,31 @@ a:focus {
             }
           }
 
-          &:nth-of-type(2) {
+          &.table-header-fixed-col-2 {
             flex: .485!important;
             @include respond(desktop-xxsm) {
               display: none;
             }
           }
 
-          &:nth-of-type(3) {
+          &.table-header-fixed-col-3 {
             flex: .565!important;
             @include respond(desktop-xsm) {
               display: none;
             }
           }
 
-          &:nth-of-type(4) {
+          &.table-header-fixed-col-4 {
             flex: .1!important;
           }
         }
 
-        &-col-1 {
+        & td {
+          &.table-header-fixed-col-1 {
+          & a {
+            display: flex;
+            align-items: center;
+          }
           & img {
             margin-left: .9rem;
             margin-right: 1.5rem;
@@ -1651,13 +1650,13 @@ a:focus {
           }
         }
 
-        &-col-2 {
+        &.table-header-fixed-col-2 {
           font-size: 1.4rem;
           line-height: 1.36;
           color: #1b2733;
         }
 
-        &-col-3 {
+        &.table-header-fixed-col-3 {
           & .btn-custom-table {
             padding: .6rem 1.8rem;
             font-size: 1.4rem;
@@ -1667,9 +1666,10 @@ a:focus {
           }
         }
 
-        &-col-4 {
+        &.table-header-fixed-col-4 {
           font-size: 1.3rem;
           color: #647282;
+        }
         }
       }
     }

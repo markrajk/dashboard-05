@@ -912,50 +912,53 @@ a:focus {
     border-bottom: 1px solid #ededf5; }
     .teams-people-view .panel-body .table-header-fixed tbody tr:last-child {
       border: none; }
-  .teams-people-view .panel-body .table-header-fixed td:nth-of-type(1), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(1) {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-1, .teams-people-view .panel-body .table-header-fixed th.table-header-fixed-col-1 {
     flex: 0.7 !important; }
     @media (max-width: 575px) {
-      .teams-people-view .panel-body .table-header-fixed td:nth-of-type(1), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(1) {
+      .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-1, .teams-people-view .panel-body .table-header-fixed th.table-header-fixed-col-1 {
         flex: 1 !important; } }
-  .teams-people-view .panel-body .table-header-fixed td:nth-of-type(2), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(2) {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-2, .teams-people-view .panel-body .table-header-fixed th.table-header-fixed-col-2 {
     flex: 0.485 !important; }
     @media (max-width: 379px) {
-      .teams-people-view .panel-body .table-header-fixed td:nth-of-type(2), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(2) {
+      .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-2, .teams-people-view .panel-body .table-header-fixed th.table-header-fixed-col-2 {
         display: none; } }
-  .teams-people-view .panel-body .table-header-fixed td:nth-of-type(3), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(3) {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-3, .teams-people-view .panel-body .table-header-fixed th.table-header-fixed-col-3 {
     flex: 0.565 !important; }
     @media (max-width: 575px) {
-      .teams-people-view .panel-body .table-header-fixed td:nth-of-type(3), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(3) {
+      .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-3, .teams-people-view .panel-body .table-header-fixed th.table-header-fixed-col-3 {
         display: none; } }
-  .teams-people-view .panel-body .table-header-fixed td:nth-of-type(4), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(4) {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-4, .teams-people-view .panel-body .table-header-fixed th.table-header-fixed-col-4 {
     flex: 0.1 !important; }
-  .teams-people-view .panel-body .table-header-fixed-col-1 img {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-1 a {
+    display: flex;
+    align-items: center; }
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-1 img {
     margin-left: .9rem;
     margin-right: 1.5rem;
     width: 4.1rem;
     height: 4.1rem;
     border-radius: 50%; }
-  .teams-people-view .panel-body .table-header-fixed-col-1 .name {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-1 .name {
     font-size: 1.4rem;
     line-height: 1.36;
     color: #1b2733; }
-    .teams-people-view .panel-body .table-header-fixed-col-1 .name span {
+    .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-1 .name span {
       margin-top: .2rem;
       display: block;
       font-size: 1.2rem;
       line-height: 1.33;
       color: #647281; }
-  .teams-people-view .panel-body .table-header-fixed-col-2 {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-2 {
     font-size: 1.4rem;
     line-height: 1.36;
     color: #1b2733; }
-  .teams-people-view .panel-body .table-header-fixed-col-3 .btn-custom-table {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-3 .btn-custom-table {
     padding: .6rem 1.8rem;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.36;
     color: #ffffff; }
-  .teams-people-view .panel-body .table-header-fixed-col-4 {
+  .teams-people-view .panel-body .table-header-fixed td.table-header-fixed-col-4 {
     font-size: 1.3rem;
     color: #647282; }
   .teams-people-view .modal-content {
